@@ -158,7 +158,7 @@ erDiagram
 - **Construir para generar Desarrollo Económico:** Especialmente en favor de las familias que desean llevar a la mesa, el Pan Nuestro de Cada Día que nos da el Señor.
 
 ## 2. Protocolo Estricto de Trabajo para el Agente (PROHIBIDO DESBANDARSE)
-Tienes **ESTRICTAMENTE PROHIBIDO** generar código funcional o crear archivos de programación sin antes haber completado y recibido mi aprobación explícita ("APROBADO PARA CODIFICAR") en las siguientes 8 etapas de diálogo:
+Tienes **ESTRICTAMENTE PROHIBIDO** generar código funcional o crear archivos de programación sin antes haber completado y recibido mi aprobación explícita ("APROBADO PARA CODIFICAR").
 
 ---
 

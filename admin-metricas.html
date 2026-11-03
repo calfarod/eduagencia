@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prototipo de panel analítico de ventas.">
+    <title>Métricas | Prototipo de administración</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/site-shell.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div data-include="partials/header.html">Cargando navegación…</div>
+    <main id="contenido" class="page-content">
+      <div class="container">
+        <p class="eyebrow">Backoffice · Prototipo visual</p>
+        <h1>Métricas de ventas</h1>
+        <nav class="admin-nav" aria-label="Secciones de administración">
+          <a href="admin-categorias.html">Categorías</a>
+          <a href="admin-productos.html">Productos</a>
+          <a href="admin-comisiones.html">Comisiones</a>
+          <a href="admin-metricas.html" aria-current="page">Métricas</a>
+        </nav>
+        <div class="notice" role="note"><p>Los indicadores no se conectan a analítica ni a ventas; no representan cifras comerciales.</p></div>
+        <section class="stats-grid section-spaced" aria-label="Indicadores por definir">
+          <article class="card stat-card"><h2>Ventas totales</h2><p>—</p></article>
+          <article class="card stat-card"><h2>Conversión</h2><p>—</p></article>
+          <article class="card stat-card"><h2>Ticket promedio</h2><p>—</p></article>
+          <article class="card stat-card"><h2>Suscripciones activas</h2><p>—</p></article>
+        </section>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption class="visually-hidden">Columnas previstas para el resumen de ventas por producto</caption>
+            <thead><tr><th>Producto / SKU</th><th>Unidades</th><th>Ingresos</th><th>Periodo</th></tr></thead>
+            <tbody><tr><td>Datos por integrar</td><td>—</td><td>—</td><td>—</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div data-include="partials/footer.html">Cargando pie de página…</div>
+  </body>
+</html>

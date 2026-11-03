@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prototipo de consulta de ventas y comisiones.">
+    <title>Comisiones | Prototipo de administración</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/site-shell.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div data-include="partials/header.html">Cargando navegación…</div>
+    <main id="contenido" class="page-content">
+      <div class="container">
+        <p class="eyebrow">Backoffice · Prototipo visual</p>
+        <h1>Ventas y comisiones</h1>
+        <nav class="admin-nav" aria-label="Secciones de administración">
+          <a href="admin-categorias.html">Categorías</a>
+          <a href="admin-productos.html">Productos</a>
+          <a href="admin-comisiones.html" aria-current="page">Comisiones</a>
+          <a href="admin-metricas.html">Métricas</a>
+        </nav>
+        <div class="notice" role="note"><p>Tabla de muestra sin transacciones reales. Los filtros y la liquidación aún no están conectados a datos.</p></div>
+        <div class="table-wrap section-spaced">
+          <table class="data-table">
+            <caption class="visually-hidden">Ejemplo de columnas para una consulta de comisiones</caption>
+            <thead><tr><th>Vendedor</th><th>Fecha</th><th>Tipo</th><th>Venta bruta</th><th>Comisión</th><th>Estado</th></tr></thead>
+            <tbody><tr><td>Datos por integrar</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Sin datos</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div data-include="partials/footer.html">Cargando pie de página…</div>
+  </body>
+</html>

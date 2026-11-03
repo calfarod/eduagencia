@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prototipo de carrito de compras de EduAgencia.">
+    <title>Carrito | Prototipo EduAgencia</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/site-shell.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div data-include="partials/header.html">Cargando navegación…</div>
+    <main id="contenido">
+      <header class="page-intro"><div class="container"><p class="eyebrow">Compra</p><h1>Carrito</h1><p>Resumen visual de una futura compra. El carrito no guarda productos todavía.</p></div></header>
+      <section class="page-content">
+        <div class="container grid grid--sidebar">
+          <div>
+            <div class="notice"><p>Tu carrito está vacío. El catálogo y las funciones de compra aún no están conectados a un backend.</p></div>
+            <div class="hero__actions"><a class="button button--accent" href="catalogo.html">Explorar catálogo</a></div>
+          </div>
+          <aside class="card service-card">
+            <h2 class="card__title">Resumen</h2>
+            <p class="card__description">Subtotal: por calcular</p>
+            <p class="card__description">Despacho: por calcular</p>
+            <button class="button" type="button" disabled>Continuar al checkout</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div data-include="partials/footer.html">Cargando pie de página…</div>
+  </body>
+</html>

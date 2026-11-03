@@ -1,9 +1,39 @@
 # PLAN DE TAREAS Y RUTA DE DESARROLLO: EDUAGENCIA.COM
 # PROYECTO: PLATAFORMA INTEGRAL DE SERVICIOS, COMERCIO Y AFILIADOS
 # TITULARIDAD: CAADConsulting SpA
-# ARCHIVO: PLAN_DE_TAREAS.md
+# ARCHIVO: plan_de_tareas_secuencial.md
 
 Este documento establece la secuencia cronológica y ordenada de actividades para la construcción, verificación y despliegue del proyecto web. Las tareas alternan responsabilidades entre el Desarrollador/Administrador (Humano) y el Asistente de Código/Arquitectura (IA).
+
+## PRIORIDAD EJECUTIVA ACTUALIZADA: COLECCIÓN DE PÁGINAS NAVEGABLES
+
+Se prioriza completar primero la experiencia frontend con páginas estáticas enlazadas y componentes compartidos. Las pantallas de autenticación, pago, logística y administración serán prototipos visuales hasta que se implementen sus respectivos servicios backend; no deben presentarse como operaciones funcionales mientras no existan.
+
+Para previsualizar las páginas, iniciar un servidor HTTP desde la raíz del repositorio (por ejemplo, `python -m http.server 8000`) y abrir `http://localhost:8000/`. Los componentes compartidos usan `fetch`, por lo que no deben abrirse directamente con el protocolo `file://`.
+
+1. **Base visual:** hito 09, hoja de estilos común.
+2. **Componentes globales:** hitos 10 y 11, header y footer compartidos por las páginas.
+3. **Páginas públicas:** hitos 13 a 18, incluyendo home, catálogo, páginas de servicios, artículo, producto físico y planes digitales.
+4. **Cuenta y transacciones:** hitos 19 a 22 más carrito, checkout, comparador y paneles por rol; estas vistas no autentican ni procesan pedidos.
+5. **Administración y páginas legales:** hitos 25 a 28 y 35 a 37; las pantallas administrativas son prototipos y los textos legales requieren validación humana.
+6. **Backend e integraciones:** hitos 23, 30 a 34 y el resto de despliegue, solo después de disponer de decisiones técnicas, credenciales y validaciones humanas.
+
+### Avance frontend
+
+- **Completado:** hitos 09, 10 y 11 (`css/main.css`, `partials/header.html`, `partials/footer.html`, `js/site-shell.js`).
+- **Prototipos navegables:** hitos 13 a 17; home, catálogo, artículo PBL, ficha de producto físico y planes/suscripciones.
+- **Prototipos de interfaz:** hitos 19 a 22 (registro, login, confirmación y error), 25 a 28 (backoffice) y páginas de carrito, checkout, comparador, recuperación de acceso y paneles por rol.
+- **Borradores pendientes de aprobación legal:** hitos 35 y 36 (`terminos.html`, `privacidad.html`).
+- **Pendiente de validación humana:** hitos 12, 18, 24, 29 y 37, incluyendo identidad visual final, contenido real y pruebas de permisos.
+- **No implementado:** autenticación, pagos, persistencia, inventario, analítica, afiliación, logística y demás servicios backend. Ninguna pantalla está habilitada para operar en producción.
+
+### Inventario de páginas implementadas como prototipo estático
+
+- **Público y servicios:** `index.html`, `catalogo.html`, `aprendizaje.html`, `ecommerce.html`, `gestion-costos.html`, `investigacion-mercado.html`, `producto-fisico.html`, `planes.html` y `comparador.html`.
+- **Compra y cuenta:** `carrito.html`, `checkout.html`, `login.html`, `registro.html`, `recuperacion.html`, `transaccion-exitosa.html`, `error.html` y `panel-cliente.html`.
+- **Operaciones y afiliación:** `panel-operaciones.html` y `panel-vendedor.html`.
+- **Backoffice:** `admin-categorias.html`, `admin-productos.html`, `admin-comisiones.html` y `admin-metricas.html`.
+- **Legal:** `terminos.html` y `privacidad.html`, ambos explícitamente identificados como borradores.
 
 ---
 
@@ -40,8 +70,8 @@ Este documento establece la secuencia cronológica y ordenada de actividades par
 | # | Tarea / Hito | Responsable | Entregable / Acción |
 |---|---|---|---|
 | **09** | Construcción de la hoja de estilos independiente `main.css`. | **[IA]** | Declarar variables CSS (`:root`) con la paleta de `eduagencia.com`, breakpoints Mobile-First (360px, 768px, 1024px, 1280px/1440px), reset semántico y clases utilitarias para grillas y tarjetas. |
-| **10** | Construcción del componente de Menú / Header global responsivo. | **[IA]** | Crear plantilla `header.html`: navegación superior accesible, modo normal en desktop, botón hamburguesa en celular, dropdown anidado de categorías, mega panel y selector condicional según estado (`login: False` / `login: True` con avatar). |
-| **11** | Construcción del componente de Footer / Pie de página corporativo. | **[IA]** | Crear plantilla `footer.html`: grilla de 4 columnas (empresa/logo, accesos rápidos, soporte y legal, newsletter con pasarelas de pago) y sub-footer con copyright expreso *"Todos los derechos reservados © CAADConsulting SpA"*. |
+| **10** | Construcción del componente de Menú / Header global responsivo. | **[IA]** | Crear componente compartido `partials/header.html`: navegación superior accesible, modo normal en desktop, botón hamburguesa en celular y menú desplegable de secciones/categorías; mostrar opciones de cuenta cuando las páginas de autenticación estén disponibles. |
+| **11** | Construcción del componente de Footer / Pie de página corporativo. | **[IA]** | Crear componente compartido `partials/footer.html`: grilla de 4 columnas (empresa, navegación, información y novedades) y sub-footer con copyright expreso *"Todos los derechos reservados © CAADConsulting SpA"*. |
 | **12** | Validación visual en navegadores de los componentes globales. | **[HUMANO]** | Probar el header y footer en resoluciones móvil (360px), tablet (768px) y laptop (1200px+), comprobando el despliegue del menú colapsable. |
 
 ---

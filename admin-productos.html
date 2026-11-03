@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prototipo de administración de productos y servicios.">
+    <title>Productos | Prototipo de administración</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/site-shell.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div data-include="partials/header.html">Cargando navegación…</div>
+    <main id="contenido" class="page-content">
+      <div class="container">
+        <p class="eyebrow">Backoffice · Prototipo visual</p>
+        <h1>Crear producto o servicio</h1>
+        <nav class="admin-nav" aria-label="Secciones de administración">
+          <a href="admin-categorias.html">Categorías</a>
+          <a href="admin-productos.html" aria-current="page">Productos</a>
+          <a href="admin-comisiones.html">Comisiones</a>
+          <a href="admin-metricas.html">Métricas</a>
+        </nav>
+        <div class="notice" role="note"><p>Los campos ilustran la interfaz prevista. No cargan imágenes, actualizan precios ni modifican inventario.</p></div>
+        <section class="form-panel section-spaced" aria-labelledby="product-title">
+          <h2 id="product-title">Información del producto</h2>
+          <form class="form-fields">
+            <div class="form-field"><label for="product-name">Nombre</label><input id="product-name" disabled></div>
+            <div class="form-field"><label for="product-category">Categoría</label><select id="product-category" disabled><option>Seleccionar categoría</option></select></div>
+            <div class="form-field"><label for="product-sku">SKU</label><input id="product-sku" disabled></div>
+            <div class="form-field"><label for="product-type">Tipo</label><select id="product-type" disabled><option>Seleccionar tipo</option><option>Físico</option><option>Digital o suscripción</option></select></div>
+            <div class="form-field"><label for="product-description">Descripción</label><textarea id="product-description" disabled></textarea></div>
+            <div class="form-field"><label for="product-price">Precio</label><input id="product-price" type="number" disabled></div>
+            <button class="button" type="button" disabled>Publicación no disponible</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <div data-include="partials/footer.html">Cargando pie de página…</div>
+  </body>
+</html>
