@@ -14,7 +14,8 @@
       <span aria-hidden="true">☰</span>
     </button>
 
-    <nav class="primary-nav" id="primary-navigation" aria-label="Navegación principal">
+    <!-- Se añade hidden para que nazca oculto en móvil -->
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navegación principal" hidden>
       <ul class="nav-list">
         <li><a href="index.html">Inicio</a></li>
         <li>
@@ -36,6 +37,17 @@
       <ul class="nav-actions">
         <li><a href="carrito.html">Carrito</a></li>
         <li><a href="login.html">Ingresar</a></li>
+        <li>
+          <button
+            type="button"
+            class="theme-toggle-header"
+            id="theme-toggle"
+            aria-label="Cambiar modo de color"
+            title="Cambiar tema claro/oscuro"
+          >
+            <span class="theme-toggle__icon" aria-hidden="true">🌓</span>
+          </button>
+        </li>
         <li><a class="button button--accent" href="index.html#contacto">Conversemos</a></li>
       </ul>
     </nav>
