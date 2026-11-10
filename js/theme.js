@@ -23,25 +23,30 @@
     updateButtonIcon(theme);
   };
 
-  // 1. Aplicación inmediata contra destello blanco (FOUC)
+  // 1. Aplicación inmediata del tema al documento
   const initialTheme = getPreferredTheme();
   document.documentElement.setAttribute('data-theme', initialTheme);
 
-  // 2. Vinculación del evento una vez montado el DOM
-  document.addEventListener('DOMContentLoaded', () => {
+  // 2. Función para enlazar el botón una vez que el header exista
+  function bindThemeToggle() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn || toggleBtn.dataset.bound) return;
+
+    toggleBtn.dataset.bound = 'true';
     updateButtonIcon(document.documentElement.getAttribute('data-theme') || 'light');
 
-    const toggleBtn = document.getElementById('theme-toggle');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
-        const next = current === 'dark' ? 'light' : 'dark';
-        setTheme(next);
-      });
-    }
-  });
+    toggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+    });
+  }
 
-  // 3. Reacción a cambios del sistema operativo si no hay elección manual
+  // Escuchar cuando el DOM esté listo y cuando los partials terminen de cargarse
+  document.addEventListener('DOMContentLoaded', bindThemeToggle);
+  document.addEventListener('partialsLoaded', bindThemeToggle);
+
+  // 3. Reacción a cambios del sistema si no hay preferencia manual
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!localStorage.getItem(STORAGE_KEY)) {
       setTheme(e.matches ? 'dark' : 'light');
