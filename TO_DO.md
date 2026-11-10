@@ -39,6 +39,9 @@ Puedes copiar y pegar este bloque directamente dentro de tu nuevo archivo TO_DO.
 **Propietario:** Carlos Alfonso Alfaro Díaz
 
 ## Higiene y Cierre de la Sesión Actual
+- [] Generar pruebas de PMV. Pivotar Data Based Decitions.
+- [] Generar productos en base a suscripciones.
+- [] Confirmar las características del web hosting.
 - [] Construir una página web de 3 columnas 20% 60% 20%.
 - [] Que el footer de la pagina web se mantenga conforme al modelo de eduagencia.com
 - [] Que el menú de navegación se mantenga conforme al modelo de eduagencia.com
