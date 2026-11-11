@@ -39,17 +39,25 @@ Puedes copiar y pegar este bloque directamente dentro de tu nuevo archivo TO_DO.
 **Propietario:** Carlos Alfonso Alfaro Díaz
 
 ## Higiene y Cierre de la Sesión Actual
-- [] Generar pruebas de PMV. Pivotar Data Based Decitions.
-- [] Generar productos en base a suscripciones.
-- [] Confirmar las características del web hosting.
-- [] Construir una página web de 3 columnas 20% 60% 20%.
-- [] Que el footer de la pagina web se mantenga conforme al modelo de eduagencia.com
-- [] Que el menú de navegación se mantenga conforme al modelo de eduagencia.com
-- [] Desarrollar y probar `01_guardian_contrasenas` (Hashing, Salt y defensas contra Fuerza Bruta).
-- [] Integrar `github-cli` (`gh`) de forma permanente en `.devcontainer/devcontainer.json`.
-- [] Cerrar Issue #1 y crear Issue #2 (`Crear TO_DO.md`).
-- [] Limpiar rastro en la raíz: borrar `__pycache__` suelto (`rm -rf __pycache__`).
-- [] Crear formalmente el archivo `TO_DO.md` en la raíz del proyecto con esta lista.
-- [] Cerrar el Issue #2 desde la terminal (`gh issue close 2 --comment "Archivo TO_DO.md creado y operativo"`).
-- [] Hacer `git add .`, `git commit` y `git push` de la nueva estructura y configuración de `.devcontainer`.
+- [] Add_New.
+- [] Add_New.
+- [] Add_New.
+- [] Add_New.
+- [] Próximo: Encontrar al que muere por nuestra solución.
+- [] Próximo: Generar un detector de necesidades -> Producto -> Resolución.
+- [] Próximo: Colección de Imágenes para aplicar a las páginas.
+- [] Próximo: Generar el contenido del Web Site Completo y sus Productos.
+- [] Próximo: Confirmar las características del web hosting.
+- [v] Generar la versión V2.0 (versión retocada de colores y modos claro/oscuro) en git.
+- [v] Generar la versión V1.0 (versión original) en git.
+- [x] Construir una página web de 3 columnas 20% 60% 20%.
+- [x] Que el footer de la pagina web se mantenga conforme al modelo de eduagencia.com
+- [x] Que el menú de navegación se mantenga conforme al modelo de eduagencia.com
+- [x] Desarrollar y probar `01_guardian_contrasenas` (Hashing, Salt y defensas contra Fuerza Bruta).
+- [x] Integrar `github-cli` (`gh`) de forma permanente en `.devcontainer/devcontainer.json`.
+- [x] Cerrar Issue #1 y crear Issue #2 (`Crear TO_DO.md`).
+- [x] Limpiar rastro en la raíz: borrar `__pycache__` suelto (`rm -rf __pycache__`).
+- [x] Crear formalmente el archivo `TO_DO.md` en la raíz del proyecto con esta lista.
+- [x] Cerrar el Issue #2 desde la terminal (`gh issue close 2 --comment "Archivo TO_DO.md creado y operativo"`).
+- [x] Hacer `git add .`, `git commit` y `git push` de la nueva estructura y configuración de `.devcontainer`.
 

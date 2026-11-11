@@ -87,6 +87,22 @@ Antes de fusionar los cambios en main, verifica los siguientes puntos en local:
 Si todas las pruebas fueron satisfactorias:
 
 ```bash
+# Verifica que estás en la rama de experimentación
+git branch
+
+# Guardar y commitear
+
+# 1. Agregar los archivos modificados
+git add css/main.css js/theme.js partials/header.html
+
+# Si también creaste js/includes.js o modificaste index.html, puedes agregarlos también:
+git add js/includes.js index.html
+
+# 2. Registrar el commit descriptivo
+git commit -m "style: calibrar contraste modo claro y solucionar apertura de menu movil"
+
+# Si estás conforme con los cambios comenzar a fundir la rama
+
 # 1. Regresar a la rama principal
 git checkout main
 
